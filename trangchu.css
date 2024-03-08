@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(56, 54, 54);
+}
+.menu{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.menu li{
+    margin: auto;
+    color: white;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 5px;
+}
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    padding: 5px;
+}
+.menu li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+main{
+    padding: 5px 30px 0 30px;
+}
+.section{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(250, 238, 215);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.section p{
+    text-align: center;
+}
+.section h1{
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    text-transform: uppercase;
+    font-family: cursive;
+    margin-top: 20px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product{
+    width: calc(33.33%-15px);
+    text-align: center;
+}
+.product img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.product h3{
+    font-size: 20px;
+}
+.product p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-right: 10px;
+    padding-top: 5px 10px 5px 10px;
+}
+.section a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: red;
+    border-radius: 5px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+@media screen and(max-width:768px){
+    header{
+        padding: 10px;
+    }
+    ul{
+        flex-wrap: 10px;
+    }
+    li{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .products{
+        flex-wrap: wrap;
+    }
+    .product{
+        width: calc(100%/2-10px);
+        margin-bottom: 30px;
+    }
+}
